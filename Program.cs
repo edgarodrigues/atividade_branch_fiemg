@@ -14,7 +14,7 @@ Console.ResetColor();
 Random random = new Random();
 
 int qtdDezena, // Adicionado a virgula
-    qtdJogoInformada,
+    qtdJogoInformada, // Adicionado a variável
     qtdDezenaInformada;
 
 decimal valorPremio;
@@ -22,28 +22,28 @@ decimal valorPremio;
 bool repetir = false; //Corrigindo de string para bool e adicionado retorno false 
 
 Console.Write("Deseja realizar quantos jogos: ");
-if (int.Parse(Console.ReadLine(), out qtdJogoInformada))
+if (int.Parse(Console.ReadLine(), out qtdJogoInformada,))
 {
     do
     {
         Console.Write("Informar a quantidade de dezena: ");
-        if (int.Parse(Console.ReadLine(), out qtdDezenaInformada))
+        if (int.Parse(Console.ReadLine(), out qtdDezenaInformada,))
         {
             if (qtdDezenaInformada < 6 || qtdDezenaInformada > 15)
-                    //repetir = true;
+                    repetir = true;
                 else
                         repetir = false;
 
             if (repetir == false)
             {
                 Console.WriteLine();
-                for (qtdJogo = 1; qtdJogoInformada <= qtdJogoInformada; qtdJogo--)
+                for (qtdJogoInformada = 1; qtdJogoInformada <= qtdJogoInformada; qtdJogoInformada++)
                 {
                     for (qtdDezena = 1; qtdDezena <= qtdDezenaInformada)
                     {
 
                     }
-                    escrever.WriteLine();
+                    Console.WriteLine();
                 }
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -73,5 +73,8 @@ else
 
 Console.Write("Informe o valor do prêmio: ");
 if (decimal.TryParse(Console.ReadLine(), out valorPremio))
-{
+
+           {
+        {
+    {
 
