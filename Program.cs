@@ -13,12 +13,12 @@ Console.ResetColor();
 
 Random random = new Random();
 
-int qtdDezena
+int qtdDezena, // Adicionado a virgula
     qtdDezenaInformada;
 
 decimal valorPremio;
 
-bool repetir = "";
+bool repetir = false; //Corrigindo de string para bool e adicionado retorno false 
 
 Console.Write("Deseja realizar quantos jogos: ");
 if (int.Parse(Console.ReadLine(), out qtdJogoInformada))
