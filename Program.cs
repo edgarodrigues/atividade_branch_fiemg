@@ -72,9 +72,28 @@ else
 // Solicitar o valor do prêmio
 
 Console.Write("Informe o valor do prêmio: ");
-if (decimal.TryParse(Console.ReadLine(), out valorPremio))
+if (inteiro.TryParse(Console.ReadLine(), out valorPremio))
+            {
 
-           {
-        {
-    {
+inteiro valordopremio = inteiro.Parse(Console.ReadLine());
 
+                Console.WriteLine($"0.75m do premio sera para quem acertar as 6 dezenas: {valordopremio * 0.75m}");
+				Console.WriteLine($"0.15m do premio sera para quem acertar as 5 dezenas: {valordopremio * 0.15m}");
+				Console.WriteLine($"0.10m do premio sera para quem acertar as 4 dezenas: {valordopremio * 0.10m}");
+				
+				Console.WriteLine("Foi informado texto no lugar de numero: ");
+            }
+			
+			else 
+			
+			}
+                
+				Console.Write("Numero invalido!Por favor,tente informar o numero novamente!: ");
+			
+			}
+		
+	
+
+
+
+           
