@@ -29,10 +29,15 @@ if (int.Parse(Console.ReadLine(), out qtdJogoInformada,))
         Console.Write("Informar a quantidade de dezena: ");
         if (int.Parse(Console.ReadLine(), out qtdDezenaInformada,))
         {
-            if (qtdDezenaInformada < 6 || qtdDezenaInformada > 15)
+            if (qtdDezenaInformada < 6 || qtdDezenaInformada > 15) // Abrindo e fechando chave
+            {
                     repetir = true;
+            }
                 else
+                {
+                    
                         repetir = false;
+                }
 
             if (repetir == false)
             {
@@ -42,7 +47,6 @@ if (int.Parse(Console.ReadLine(), out qtdJogoInformada,))
                     for (qtdDezena = 1; qtdDezena <= qtdDezenaInformada)
                     {
 
-                    }
                     Console.WriteLine();
                 }
                 Console.WriteLine();
@@ -72,10 +76,10 @@ else
 // Solicitar o valor do prêmio
 
 Console.Write("Informe o valor do prêmio: ");
-if (inteiro.TryParse(Console.ReadLine(), out valorPremio))
+if (int.TryParse(Console.ReadLine(), out valorPremio))
             {
 
-inteiro valordopremio = inteiro.Parse(Console.ReadLine());
+int valordopremio = int.Parse(Console.ReadLine());
 
                 Console.WriteLine($"0.75m do premio sera para quem acertar as 6 dezenas: {valordopremio * 0.75m}");
 				Console.WriteLine($"0.15m do premio sera para quem acertar as 5 dezenas: {valordopremio * 0.15m}");
