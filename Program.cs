@@ -14,6 +14,7 @@ Console.ResetColor();
 Random random = new Random();
 
 int qtdDezena, // Adicionado a virgula
+    qtdJogoInformada,
     qtdDezenaInformada;
 
 decimal valorPremio;
