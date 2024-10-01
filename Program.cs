@@ -67,7 +67,7 @@ if (int.Parse(Console.ReadLine(), out qtdJogoInformada))
                     Console.WriteLine("Número inválido!");
                 }
             }
-            //while (repetir == true);
+            while (repetir == true);
         }
         else
 
